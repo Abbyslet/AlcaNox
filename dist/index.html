@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alcaox: una capa de ciberdefensa pensada para proteger lo que no puede detenerse."
+    />
+    <meta name="theme-color" content="#050806" />
+    <title>Alcaox — Ciberdefensa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <div class="site-shell">
+      <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+          <a class="brand" href="#inicio" aria-label="Alcaox, ir al inicio">
+            <span class="brand-icon">
+              <img src="assets/alcaox-logo.png" alt="" />
+            </span>
+            <span class="brand-name">ALCAOX</span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+          >
+            <span class="sr-only">Abrir menú</span>
+            <span></span><span></span>
+          </button>
+
+          <nav class="primary-nav" id="primaryNav" aria-label="Navegación principal">
+            <a href="#servicios">Defensa</a>
+            <a href="#senal">Señal</a>
+            <a href="#metodo">Método</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+
+          <button class="header-cta" type="button" data-scroll-target="#contacto">
+            <span>Hablemos</span>
+            <svg viewBox="0 0 18 18" aria-hidden="true">
+              <path d="M3 9h11M10 4l5 5-5 5" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main id="contenido">
+        <section class="hero" id="inicio" aria-labelledby="heroTitle">
+          <div class="hero-grid" aria-hidden="true"></div>
+          <div class="hero-grain" aria-hidden="true"></div>
+          <div class="hero-aura" aria-hidden="true"></div>
+          <div class="hero-beam" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-three" aria-hidden="true"></div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-coordinate coordinate-left">-33.4489° S</div>
+            <div class="visual-coordinate coordinate-right">70.6693° W</div>
+            <div class="visual-rule rule-one"></div>
+            <div class="visual-rule rule-two"></div>
+            <div class="logo-signal"></div>
+            <img class="hero-logo" src="assets/alcaox-logo.png" alt="" />
+            <p class="hero-word">ALCAOX</p>
+            <p class="visual-caption">INTEGRIDAD // VIGILANCIA // RESPUESTA</p>
+          </div>
+
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              <span>Sistema de ciberdefensa independiente</span>
+            </div>
+
+            <div class="hero-copy">
+              <p class="hero-kicker">ALCAOX / 001</p>
+              <h1 id="heroTitle">
+                La calma es saber<br />
+                que estás <em>cubierto.</em>
+              </h1>
+              <p class="hero-description">
+                Claridad para detectar, contener y fortalecer lo que sostiene tu mundo digital.
+              </p>
+            </div>
+
+            <form class="signal-form" id="signalForm" novalidate>
+              <label for="securityBrief">¿Qué quieres proteger?</label>
+              <div class="signal-input-wrap">
+                <input
+                  id="securityBrief"
+                  name="securityBrief"
+                  type="text"
+                  autocomplete="off"
+                  placeholder="Cuéntanos brevemente tu desafío de seguridad..."
+                  maxlength="140"
+                />
+                <button type="submit" aria-label="Preparar conversación">
+                  <svg viewBox="0 0 18 18" aria-hidden="true">
+                    <path d="M3 9h11M10 4l5 5-5 5" />
+                  </svg>
+                </button>
+              </div>
+              <p class="form-status" id="signalStatus" role="status" aria-live="polite">
+                Este espacio es privado: la demo no envía tu información.
+              </p>
+            </form>
+          </div>
+
+          <div class="hero-bottom" aria-label="Estado de Alcaox">
+            <div class="live-status">
+              <span class="live-dot"></span>
+              <span>SEÑAL DISPONIBLE</span>
+            </div>
+            <p>Protección pensada para moverse antes del impacto.</p>
+            <a href="#servicios" class="scroll-cue">
+              <span>Explorar</span>
+              <span class="scroll-line"></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="intro-section reveal" id="servicios" aria-labelledby="introTitle">
+          <div class="section-marker">
+            <span>01</span>
+            <span>DEFENSA EN CAPAS</span>
+          </div>
+
+          <div class="intro-layout">
+            <h2 id="introTitle">
+              Una defensa que no<br />
+              hace <em>ruido.</em>
+            </h2>
+
+            <div class="intro-copy">
+              <p>
+                Alcaox convierte la complejidad técnica en una visión accionable. Menos alarma,
+                más contexto para decidir con precisión.
+              </p>
+              <a class="text-link" href="#metodo">
+                Conocer el método
+                <svg viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="M3 9h11M10 4l5 5-5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="defense-grid">
+            <article class="defense-item tilt-card">
+              <span class="defense-number">01</span>
+              <div>
+                <span class="defense-eyebrow">OBSERVAR</span>
+                <h3>Superficie clara.</h3>
+                <p>Identifica puntos expuestos y entiende qué merece atención primero.</p>
+              </div>
+              <span class="defense-arrow" aria-hidden="true">↗</span>
+            </article>
+
+            <article class="defense-item tilt-card">
+              <span class="defense-number">02</span>
+              <div>
+                <span class="defense-eyebrow">CONTEXTUALIZAR</span>
+                <h3>Señales con sentido.</h3>
+                <p>Separa lo urgente de lo irrelevante para enfocar cada decisión.</p>
+              </div>
+              <span class="defense-arrow" aria-hidden="true">↗</span>
+            </article>
+
+            <article class="defense-item tilt-card">
+              <span class="defense-number">03</span>
+              <div>
+                <span class="defense-eyebrow">FORTALECER</span>
+                <h3>Resiliencia real.</h3>
+                <p>Convierte cada aprendizaje en una capa adicional de protección.</p>
+              </div>
+              <span class="defense-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="signal-section" id="senal" aria-labelledby="signalTitle">
+          <div class="signal-backdrop" aria-hidden="true">
+            <div class="signal-grid"></div>
+            <div class="signal-ring ring-a"></div>
+            <div class="signal-ring ring-b"></div>
+            <div class="signal-pulse"></div>
+          </div>
+
+          <div class="signal-header reveal">
+            <div class="section-marker section-marker-light">
+              <span>02</span>
+              <span>LECTURA DE SEÑAL</span>
+            </div>
+            <h2 id="signalTitle">No todo aviso es una amenaza.<br /><em>Pero toda señal importa.</em></h2>
+          </div>
+
+          <div class="signal-console reveal">
+            <div class="console-topbar">
+              <div class="console-title">
+                <span class="console-orb"></span>
+                ALCANOX / DEFENSE SIGNAL
+              </div>
+              <span class="console-time" id="consoleTime">00:00:00</span>
+            </div>
+
+            <div class="console-body">
+              <div class="console-index">
+                <span>01</span>
+                <span>02</span>
+                <span>03</span>
+                <span>04</span>
+                <span>05</span>
+              </div>
+              <div class="console-trace" aria-hidden="true">
+                <svg viewBox="0 0 960 260" preserveAspectRatio="none">
+                  <path
+                    d="M0 174 C48 172, 65 165, 111 169 S173 142, 221 155 S297 193, 347 157 S425 139, 468 148 S518 208, 564 183 S610 53, 646 83 S692 189, 731 161 S801 133, 844 149 S909 123, 960 128"
+                  />
+                  <path
+                    class="trace-soft"
+                    d="M0 192 C67 189, 111 197, 172 181 S278 142, 331 178 S399 199, 468 178 S556 124, 603 160 S694 215, 741 186 S855 111, 960 148"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="console-footer">
+              <span>LECTURA CONTEXTUAL</span>
+              <span class="console-status"><i></i> ESTABLE</span>
+              <span>UMBRAL / ADAPTABLE</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="method-section reveal" id="metodo" aria-labelledby="methodTitle">
+          <div class="method-head">
+            <div class="section-marker">
+              <span>03</span>
+              <span>RUTA DE PROTECCIÓN</span>
+            </div>
+            <p>
+              Una conversación clara es el primer paso para diseñar una defensa que encaje con tu
+              realidad.
+            </p>
+          </div>
+
+          <h2 id="methodTitle">De la señal<br />a la <em>certeza.</em></h2>
+
+          <ol class="method-list">
+            <li>
+              <span class="method-index">01</span>
+              <div>
+                <h3>Escuchamos el contexto.</h3>
+                <p>Lo que ya sabes, lo que te preocupa y lo que no puede detenerse.</p>
+              </div>
+            </li>
+            <li>
+              <span class="method-index">02</span>
+              <div>
+                <h3>Trazamos prioridades.</h3>
+                <p>Una ruta comprensible, con foco en las decisiones que mueven la aguja.</p>
+              </div>
+            </li>
+            <li>
+              <span class="method-index">03</span>
+              <div>
+                <h3>Fortalecemos juntos.</h3>
+                <p>Tu defensa evoluciona con cada señal, sin perder la tranquilidad de vista.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="contact-section" id="contacto" aria-labelledby="contactTitle">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="contact-inner reveal">
+            <img class="contact-logo" src="assets/alcaox-logo.png" alt="" />
+            <p class="contact-label">ALCAOX / ESTAMOS LISTOS</p>
+            <h2 id="contactTitle">Protege lo que<br /><em>no puede esperar.</em></h2>
+            <p>
+              Cuéntanos qué estás construyendo o qué necesitas reforzar. Empecemos desde la señal
+              correcta.
+            </p>
+            <button class="contact-button" type="button" data-scroll-target="#inicio">
+              Iniciar una conversación
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="M3 9h11M10 4l5 5-5 5" />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="#inicio" aria-label="Alcaox, ir al inicio">
+          <span class="brand-icon">
+            <img src="assets/alcaox-logo.png" alt="" />
+          </span>
+          <span class="brand-name">ALCAOX</span>
+        </a>
+        <p>CYBERDEFENSE SYSTEM / 2026</p>
+        <a href="#inicio">Volver arriba <span>↑</span></a>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
