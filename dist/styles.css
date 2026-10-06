@@ -1304,6 +1304,209 @@ h2 em {
   color: var(--acid);
 }
 
+/* Portada minimalista: luz lateral, plataforma cálida y el emblema como protagonista. */
+.hero {
+  min-height: max(760px, 100svh);
+  background: #020302;
+  border-bottom-color: rgba(238, 205, 150, 0.13);
+}
+
+.hero-grid,
+.hero-aura,
+.hero-orbit {
+  display: none;
+}
+
+.hero-grain {
+  z-index: 1;
+  opacity: 0.06;
+}
+
+.hero-shadow {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 14% 64%, rgba(109, 38, 12, 0.44), transparent 24%),
+    linear-gradient(180deg, #010201 0%, #030303 44%, #090503 100%);
+}
+
+.hero-beam {
+  z-index: -1;
+  width: min(81vw, 1190px);
+  height: min(20vw, 250px);
+  top: 53%;
+  left: 75%;
+  opacity: 0.85;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(126, 43, 16, 0.05) 14%,
+      rgba(232, 183, 121, 0.2) 39%,
+      rgba(255, 245, 222, 0.92) 72%,
+      rgba(224, 237, 255, 0.55) 87%,
+      transparent 100%
+    );
+  clip-path: polygon(0 47%, 100% 15%, 100% 83%, 0 62%);
+  filter: blur(9px);
+  mix-blend-mode: screen;
+}
+
+.hero-beam::after {
+  position: absolute;
+  inset: 25% -3% 25% 38%;
+  border-radius: 50%;
+  background: rgba(255, 245, 219, 0.47);
+  content: "";
+  filter: blur(36px);
+}
+
+.hero-platform {
+  position: absolute;
+  z-index: -1;
+  width: min(84vw, 1210px);
+  height: min(45vw, 590px);
+  bottom: min(-30vw, -370px);
+  left: min(-16vw, -170px);
+  overflow: hidden;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at 60% 17%, rgba(209, 82, 29, 0.76) 0%, rgba(102, 33, 10, 0.79) 27%, rgba(31, 10, 5, 0.96) 49%, #050404 71%);
+  box-shadow:
+    inset -42px 32px 96px rgba(255, 145, 68, 0.11),
+    inset 0 -105px 130px rgba(0, 0, 0, 0.88),
+    0 -19px 52px rgba(181, 61, 18, 0.22);
+  transform: rotate(-5deg);
+}
+
+.hero-platform::before {
+  position: absolute;
+  top: 64%;
+  right: 6%;
+  bottom: -12%;
+  left: 6%;
+  border: 1px solid rgba(255, 206, 114, 0.88);
+  border-top-color: rgba(255, 220, 151, 0.62);
+  border-radius: 50%;
+  content: "";
+  filter: blur(0.2px);
+  box-shadow: 0 0 9px rgba(255, 166, 70, 0.38);
+}
+
+.hero-platform::after {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.9) 74%, #010101);
+  content: "";
+}
+
+.hero-visual {
+  z-index: 0;
+  overflow: visible;
+}
+
+.logo-halo {
+  position: absolute;
+  width: clamp(168px, 22vw, 326px);
+  aspect-ratio: 1;
+  top: 59%;
+  left: clamp(26%, 33vw, 38%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(209, 255, 155, 0.28), rgba(134, 215, 79, 0.09) 36%, transparent 71%);
+  transform: translate(-50%, -50%);
+  filter: blur(14px);
+}
+
+.hero-logo {
+  z-index: 1;
+  width: clamp(168px, 22vw, 326px);
+  top: 59%;
+  left: clamp(26%, 33vw, 38%);
+  opacity: 0.98;
+  transform: translate(-50%, -50%) rotate(-2deg);
+  filter:
+    drop-shadow(0 0 3px rgba(255, 247, 221, 0.86))
+    drop-shadow(0 0 17px rgba(191, 247, 112, 0.78))
+    drop-shadow(0 0 42px rgba(155, 220, 82, 0.52));
+  animation: minimalist-logo-glow 5.2s ease-in-out infinite;
+}
+
+.hero-content {
+  z-index: 2;
+  min-height: max(760px, 100svh);
+  padding: 0 clamp(22px, 4.3vw, 72px);
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-left: clamp(140px, 20vw, 315px);
+  text-align: center;
+}
+
+.hero h1 {
+  max-width: none;
+  color: rgba(251, 250, 246, 0.96);
+  font-family: var(--sans);
+  font-size: clamp(1.65rem, 3.2vw, 3.25rem);
+  font-weight: 380;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  text-shadow: 0 2px 26px rgba(0, 0, 0, 0.58);
+}
+
+.hero-scroll {
+  position: absolute;
+  z-index: 3;
+  right: clamp(22px, 4.3vw, 72px);
+  bottom: 29px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(245, 236, 218, 0.48);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.hero-scroll span {
+  width: 31px;
+  height: 1px;
+  background: rgba(251, 210, 130, 0.7);
+  transition: width 180ms ease;
+}
+
+.hero-scroll:hover {
+  color: #fff8e9;
+}
+
+.hero-scroll:hover span {
+  width: 45px;
+}
+
+@keyframes minimalist-logo-glow {
+  0%,
+  100% {
+    opacity: 0.86;
+    transform: translate(-50%, -50%) rotate(-2deg) scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(1deg) scale(1.025);
+  }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -1651,6 +1854,110 @@ h2 em {
     width: 100%;
     order: 3;
     font-size: 0.54rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    min-height: 760px;
+  }
+
+  .hero-content {
+    min-height: 760px;
+    padding: 0 22px;
+  }
+
+  .hero-platform {
+    width: 116vw;
+    height: 64vw;
+    bottom: -35vw;
+    left: -36vw;
+  }
+
+  .hero-beam {
+    width: 115vw;
+    height: 34vw;
+    top: 54%;
+    left: 78%;
+    filter: blur(9px);
+  }
+
+  .hero-logo,
+  .logo-halo {
+    top: 60%;
+    left: 34%;
+  }
+
+  .hero-logo {
+    width: clamp(145px, 32vw, 245px);
+  }
+
+  .logo-halo {
+    width: clamp(170px, 37vw, 284px);
+  }
+
+  .hero-copy {
+    padding-top: 16px;
+    padding-left: 23vw;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.42rem, 4.4vw, 2.15rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    min-height: 670px;
+  }
+
+  .hero-content {
+    min-height: 670px;
+  }
+
+  .hero-platform {
+    width: 147vw;
+    height: 82vw;
+    bottom: -43vw;
+    left: -64vw;
+  }
+
+  .hero-beam {
+    width: 142vw;
+    height: 46vw;
+    top: 55%;
+    left: 86%;
+  }
+
+  .hero-logo,
+  .logo-halo {
+    top: 61%;
+    left: 35%;
+  }
+
+  .hero-logo {
+    width: 138px;
+  }
+
+  .logo-halo {
+    width: 176px;
+  }
+
+  .hero-copy {
+    padding-top: 0;
+    padding-left: 25vw;
+  }
+
+  .hero h1 {
+    max-width: 250px;
+    margin-left: auto;
+    font-size: clamp(1.26rem, 5.2vw, 1.7rem);
+    line-height: 1.16;
+  }
+
+  .hero-scroll {
+    bottom: 20px;
+    font-size: 0.55rem;
   }
 }
 
