@@ -1,0 +1,14 @@
+# Entregas duplicadas y proyectos independientes: no forman parte del sitio AlcaNox.
+/PUBLICAR_HOSTINGER/
+/PaginaLeensFish/
+/preview-leensfish-server.cjs
+/LEER-ANTES-DE-SUBIR.txt
+
+# Salidas de una publicación anterior.
+/.openai/
+/dist/
+
+# Archivos locales del sistema y del editor.
+.DS_Store
+Thumbs.db
+.vscode/

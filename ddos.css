@@ -1,0 +1,325 @@
+:root {
+  color-scheme: dark;
+  --ddos-black: #050505;
+  --ddos-paper: #f3f3f1;
+  --ddos-soft: rgba(243, 243, 241, 0.62);
+  --ddos-quiet: rgba(243, 243, 241, 0.36);
+  --ddos-acid: #bcf66d;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; background: var(--ddos-black); }
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--ddos-black);
+  color: var(--ddos-paper);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration: none; }
+.ddos-shell { min-height: 100svh; overflow: clip; }
+.ddos-wrap { width: min(calc(100% - clamp(44px, 10vw, 152px)), 1380px); margin: 0 auto; }
+
+.ddos-hero {
+  display: grid;
+  min-height: 680px;
+  align-items: center;
+  padding: 112px 0 66px;
+  background: var(--ddos-black);
+}
+
+.ddos-hero .ddos-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(360px, 0.84fr);
+  gap: clamp(46px, 6vw, 96px);
+  align-items: center;
+}
+
+.ddos-copy h1 {
+  margin: 0;
+  color: var(--ddos-paper);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.8rem, 4.8vw, 5.55rem);
+  font-weight: 520;
+  letter-spacing: -0.078em;
+  line-height: 0.93;
+}
+
+.ddos-copy h1 em { color: rgba(243, 243, 241, 0.52); font-style: normal; }
+.ddos-kicker {
+  display: block;
+  margin: 0 0 18px;
+  color: var(--ddos-acid);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ddos-lead {
+  max-width: 570px;
+  margin: 31px 0 0;
+  color: var(--ddos-soft);
+  font-size: clamp(0.98rem, 1.25vw, 1.13rem);
+  font-weight: 450;
+  letter-spacing: -0.025em;
+  line-height: 1.55;
+}
+
+.ddos-lead p { margin: 0; }
+.ddos-lead p + p { margin-top: 13px; }
+
+.ddos-cta {
+  display: inline-flex;
+  gap: 11px;
+  align-items: center;
+  margin-top: 37px;
+  padding: 13px 16px 13px 18px;
+  border: 1px solid rgba(243, 243, 241, 0.16);
+  border-radius: 999px;
+  background: rgba(243, 243, 241, 0.92);
+  color: #0a0a0b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.ddos-cta b { color: rgba(10, 10, 11, 0.64); font-size: 1.03rem; font-weight: 500; line-height: 0.6; }
+.ddos-cta:hover, .ddos-cta:focus-visible { border-color: #fff; background: #fff; transform: translateY(-1px); }
+
+.ddos-visual {
+  position: relative;
+  width: min(100%, 485px);
+  justify-self: end;
+  margin: 0;
+  aspect-ratio: 0.96;
+  overflow: hidden;
+}
+
+.ddos-visual::before {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(188, 246, 109, 0.18), transparent 62%);
+  filter: blur(22px);
+  content: "";
+}
+
+.ddos-scanline {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  left: 5%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(188, 246, 109, 0.66), transparent);
+  box-shadow: 0 0 28px rgba(188, 246, 109, 0.42);
+  transform: rotate(-16deg);
+}
+
+.ddos-orbit,
+.ddos-signal-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-16deg);
+}
+
+.ddos-orbit-one { width: 88%; height: 45%; border: 1px solid rgba(188, 246, 109, 0.27); }
+.ddos-orbit-two { width: 66%; height: 34%; border: 1px solid rgba(243, 243, 241, 0.23); transform: translate(-50%, -50%) rotate(25deg); }
+.ddos-signal-ring { width: 34%; height: 18%; border: 1px solid rgba(188, 246, 109, 0.6); box-shadow: 0 0 0 12px rgba(188, 246, 109, 0.05), 0 0 42px rgba(188, 246, 109, 0.24); }
+
+.ddos-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 24%;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgba(243, 243, 241, 0.54);
+  border-radius: 50%;
+  background: #10150d;
+  box-shadow: inset 0 0 28px rgba(188, 246, 109, 0.16), 0 0 42px rgba(188, 246, 109, 0.18);
+  transform: translate(-50%, -50%);
+}
+
+.ddos-core span {
+  color: var(--ddos-acid);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(0.58rem, 1vw, 0.78rem);
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.ddos-legacy-signal {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ddos-acid);
+  box-shadow: 0 0 0 5px rgba(188, 246, 109, 0.1), 0 0 18px rgba(188, 246, 109, 0.65);
+}
+
+.ddos-legacy-signal-one { top: 23%; left: 18%; }
+.ddos-legacy-signal-two { top: 31%; right: 14%; }
+.ddos-legacy-signal-three { right: 23%; bottom: 20%; }
+
+[data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 680ms cubic-bezier(0.16, 1, 0.3, 1), transform 780ms cubic-bezier(0.16, 1, 0.3, 1); }
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 880px) {
+  .ddos-hero { min-height: 0; padding-top: 118px; }
+  .ddos-hero .ddos-wrap { grid-template-columns: 1fr; gap: 62px; }
+  .ddos-visual { width: min(100%, 520px); justify-self: start; }
+}
+
+@media (max-width: 620px) {
+  .ddos-wrap { width: min(100% - 44px, 560px); }
+  .ddos-hero { min-height: 0; padding: 124px 0 86px; }
+  .ddos-copy h1 { font-size: clamp(3.05rem, 14.2vw, 4.7rem); }
+  .ddos-lead { margin-top: 25px; font-size: 0.97rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+  [data-reveal] { opacity: 1; transform: none; }
+}
+
+.ddos-minimal-traffic { width: min(100%, 520px); justify-self: end; margin: 0; }
+.ddos-minimal-traffic svg { display: block; width: 100%; height: auto; overflow: visible; }
+.ddos-minimal-base { fill: none; stroke: rgba(169, 174, 182, .13); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.ddos-minimal-grid path { fill: none; stroke: rgba(169, 174, 182, .055); stroke-dasharray: 3 5; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.ddos-minimal-copy text { fill: rgba(164, 169, 177, .42); font-family: Inter, sans-serif; font-size: 8px; font-weight: 500; letter-spacing: .06em; }
+.ddos-minimal-copy .ddos-metric-title { fill: rgba(187, 191, 197, .62); font-size: 9px; font-weight: 700; letter-spacing: .14em; }
+.ddos-minimal-copy .ddos-metric-unit { font-size: 8px; font-weight: 700; letter-spacing: .12em; }
+.ddos-minimal-copy .ddos-peak-label { fill: rgba(184, 189, 196, .58); font-size: 8px; font-weight: 700; letter-spacing: .1em; }
+.ddos-traffic-area { fill: url(#ddosTrafficFill); opacity: 0; animation: ddos-area-in 1.8s ease-out .2s forwards; }
+.ddos-traffic-line { fill: none; stroke: rgba(177, 182, 190, .65); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.4; stroke-dasharray: 810; stroke-dashoffset: 810; vector-effect: non-scaling-stroke; animation: ddos-line-draw 2s cubic-bezier(.22, 1, .36, 1) .1s forwards; }
+.ddos-chart-points circle { fill: #090909; stroke: rgba(182, 187, 195, .68); stroke-width: 1.2; opacity: 0; transform-box: fill-box; transform-origin: center; vector-effect: non-scaling-stroke; animation: ddos-point-in .45s ease-out forwards; }
+.ddos-chart-points circle:nth-child(1) { animation-delay: 1.13s; }.ddos-chart-points circle:nth-child(2) { animation-delay: 1.68s; }
+@keyframes ddos-line-draw { to { stroke-dashoffset: 0; } }
+@keyframes ddos-area-in { to { opacity: 1; } }
+@keyframes ddos-point-in { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+@media (max-width: 880px) { .ddos-minimal-traffic { justify-self: start; } }
+@media (prefers-reduced-motion: reduce) { .ddos-traffic-area, .ddos-traffic-line, .ddos-chart-points circle { animation: none; opacity: 1; stroke-dashoffset: 0; transform: none; } }
+
+.ddos-page .forensics-copy h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.2rem, 3.45vw, 3.9rem);
+  letter-spacing: -0.068em;
+  line-height: 0.96;
+}
+
+@media (max-width: 620px) {
+  .ddos-page .forensics-copy h1 {
+    font-size: clamp(2.35rem, 11.6vw, 3.45rem);
+    letter-spacing: -0.066em;
+  }
+}
+
+@media (max-width: 880px) {
+  .forensics-hero {
+    min-height: auto;
+    padding: 106px 0 58px;
+  }
+
+  .forensics-hero .forensics-wrap {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 48px;
+  }
+
+  .forensics-copy,
+  .ddos-minimal-traffic {
+    width: 100%;
+    max-width: 620px;
+  }
+
+  .ddos-minimal-traffic {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 620px) {
+  .forensics-wrap {
+    width: min(calc(100% - 36px), 560px);
+  }
+
+  .forensics-hero {
+    padding: 96px 0 44px;
+  }
+
+  .forensics-hero .forensics-wrap {
+    gap: 38px;
+  }
+
+  .forensics-copy h1 {
+    max-width: 100%;
+    font-size: clamp(2.65rem, 13vw, 3.8rem);
+    letter-spacing: -.072em;
+    line-height: .94;
+  }
+
+  .forensics-lead {
+    max-width: 100%;
+    margin-top: 24px;
+    font-size: .91rem;
+    line-height: 1.58;
+  }
+
+  .forensics-lead p + p {
+    margin-top: 12px;
+  }
+
+  .forensics-cta {
+    min-height: 44px;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 12px 15px 12px 17px;
+    white-space: normal;
+  }
+
+  .ddos-minimal-traffic {
+    width: 100%;
+    margin-top: 2px;
+  }
+
+  .ddos-minimal-copy text {
+    font-size: 12px;
+  }
+
+  .ddos-minimal-copy .ddos-metric-title {
+    font-size: 13px;
+  }
+
+  .ddos-minimal-copy .ddos-metric-unit {
+    font-size: 11px;
+  }
+
+  .ddos-minimal-copy .ddos-peak-label {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .forensics-wrap {
+    width: min(calc(100% - 30px), 560px);
+  }
+
+  .forensics-copy h1 {
+    font-size: clamp(2.45rem, 12.7vw, 3rem);
+  }
+
+  .forensics-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

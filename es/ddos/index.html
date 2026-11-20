@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es" class="page-transition" data-site-root="../../">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="description" content="Resiliencia ante DoS/DDoS: análisis de capacidad, rendimiento y resistencia operativa de servidores y aplicaciones." />
+    <meta name="theme-color" content="#050505" />
+    <title>Resiliencia ante DoS/DDoS — AlcaNox</title>
+    <link rel="preload" href="../../assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../../assets/alcaox-logo-header.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="stylesheet" href="../../fonts.css?v=20261029-local-fonts-v1" />
+<link rel="stylesheet" href="../../forense.css" />
+    <link rel="stylesheet" href="../../ddos.css" />
+    <link rel="stylesheet" href="../../topbar.css?v=20261030-mobile-language-clean-v11" />
+    <link rel="stylesheet" href="../../page-transition.css?v=20261029-route-loader-v25" />
+    <link rel="stylesheet" href="../../mobile.css?v=20261105-emblems-v2" />
+    <script src="../../page-transition.js?v=20261030-language-router-v29" defer></script>
+    <script src="../../forense.js?v=20261028-toolbar-clean-v2" defer></script>
+      <link rel="stylesheet" href="../../responsive.css?v=20261028-responsive-seo-v1" />
+      <meta name="keywords" content="LeensFish, ciberseguridad, pentesting" />
+    <link rel="canonical" href="https://alcanox.com/es/ddos/" data-localized-route="true" />
+    <link rel="alternate" hreflang="es" href="https://alcanox.com/es/ddos/" data-localized-route="true" />
+    <link rel="alternate" hreflang="en" href="https://alcanox.com/en/ddos/" data-localized-route="true" />
+    <link rel="alternate" hreflang="x-default" href="https://alcanox.com/" data-localized-route="true" />
+    <meta property="og:url" content="https://alcanox.com/es/ddos/" data-localized-route="true" />
+  </head>
+  <body class="ddos-page">
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+    <div class="site-shell forensics-shell">
+      <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+          <a class="brand" href="../#inicio" aria-label="AlcaNox, ir al inicio">
+            <span class="brand-icon"><img src="../../assets/alcaox-logo-header.webp" alt="" width="192" height="157" decoding="async" /></span>
+            <span class="brand-name">ALCANOX</span>
+          </a>
+
+          <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+            <span class="sr-only">Abrir menú</span>
+            <span></span><span></span>
+          </button>
+
+          <nav class="primary-nav" id="primaryNav" aria-label="Navegación principal">
+            <a href="../#inicio">Inicio</a>
+            <a href="../derecho-informatico/">Documentación Legal</a>
+            <a href="../primer-pentesting/">Primer Pentesting</a>
+            <a href="../forense/">Análisis forense</a>
+            <a href="../precios/">Precios</a>
+            <a href="../ddos/" aria-current="page">Resiliencia DDoS.</a>
+</nav>
+          <!-- bilingual-switcher:desktop:start -->
+          <div class="language-switcher" aria-label="Selector de idioma">
+            <a href="/es/ddos/" lang="es" hreflang="es" data-language-choice="es" aria-current="page">ES</a>
+            <span aria-hidden="true">/</span>
+            <a href="/en/ddos/" lang="en" hreflang="en" data-language-choice="en">EN</a>
+          </div>
+          <!-- bilingual-switcher:desktop:end -->
+<a class="header-cta" href="../contacto/"><span>Contacto</span><b aria-hidden="true">↗</b></a>
+        </div>
+      </header>
+
+      <main id="contenido">
+        <section class="forensics-hero" aria-labelledby="ddosTitle">
+          <div class="forensics-wrap">
+            <div class="forensics-copy" data-reveal>
+              <h1 id="ddosTitle">Resiliencia ante<br />DoS/DDoS</h1>
+              <div class="forensics-lead">
+                <p><strong>Análisis avanzado de la capacidad operativa de servidores y aplicaciones para determinar sus límites de rendimiento, consumo de recursos y resistencia ante escenarios de saturación.</strong></p>
+                <p>Mediante pruebas de carga controladas y modelos de estimación, evaluamos <strong>cuántos usuarios y solicitudes simultáneas puede soportar una infraestructura</strong>, identificando el volumen de tráfico a partir del cual su rendimiento comienza a degradarse.</p>
+                <p>Analizamos qué servicios, procesos y operaciones generan mayor consumo de CPU, memoria y ancho de banda, detectando cuellos de botella y puntos críticos que podrían comprometer la disponibilidad del sistema.</p>
+                <p>A partir de los resultados, desarrollamos <strong>proyecciones de capacidad y posibles escenarios de denegación de servicio (DoS/DDoS)</strong>, estimando el impacto de cargas excesivas, la probabilidad de saturación bajo distintos escenarios y las condiciones necesarias para mantener la estabilidad operativa.</p>
+                <p><strong>El objetivo es anticipar los límites de la infraestructura, prevenir interrupciones y optimizar su capacidad</strong>, proporcionando estadísticas de rendimiento, estimaciones técnicas y recomendaciones especializadas para fortalecer su resiliencia.</p>
+              </div>
+              <a class="forensics-cta" href="../contacto/">Iniciar una evaluación <b aria-hidden="true">↗</b></a>
+            </div>
+
+            <figure class="ddos-minimal-traffic" data-reveal aria-label="Señal animada de tráfico DDoS bajo mitigación">
+              <svg viewBox="0 0 560 250" role="img" aria-label="Tráfico entrante con picos de carga contenidos">
+                <defs>
+                  <linearGradient id="ddosTrafficFill" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0" stop-color="#a8adb5" stop-opacity=".09" />
+                    <stop offset="1" stop-color="#a8adb5" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <g class="ddos-minimal-grid" aria-hidden="true">
+                  <path d="M22 118H538M22 160H538" />
+                </g>
+                <g class="ddos-minimal-copy" aria-hidden="true">
+                  <text x="22" y="16" class="ddos-metric-title">TRÁFICO DEL SERVIDOR</text>
+                  <text x="538" y="16" text-anchor="end" class="ddos-metric-unit">REQ/S</text>
+                  <text x="0" y="39">100</text><text x="6" y="121">50</text><text x="12" y="205">0</text>
+                  <text x="22" y="230">00:00</text><text x="185" y="230">08:00</text><text x="350" y="230">16:00</text><text x="498" y="230">24:00</text>
+                  <text x="277" y="31" class="ddos-peak-label">PICO 96</text>
+                  <text x="473" y="58" class="ddos-peak-label">PICO 82</text>
+                </g>
+                <path class="ddos-minimal-base" d="M22 202H538" />
+                <path class="ddos-traffic-area" d="M22 174 L45 165 L68 171 L91 151 L114 158 L137 137 L160 166 L183 156 L206 184 L229 170 L252 126 L265 34 L278 143 L301 162 L324 150 L347 168 L370 130 L393 137 L416 164 L439 145 L462 61 L475 120 L488 163 L511 177 L538 174 V202 H22Z" />
+                <path class="ddos-traffic-line" d="M22 174 L45 165 L68 171 L91 151 L114 158 L137 137 L160 166 L183 156 L206 184 L229 170 L252 126 L265 34 L278 143 L301 162 L324 150 L347 168 L370 130 L393 137 L416 164 L439 145 L462 61 L475 120 L488 163 L511 177 L538 174" />
+                <g class="ddos-chart-points" aria-hidden="true">
+                  <circle cx="265" cy="34" r="3.5" /><circle cx="462" cy="61" r="3.5" />
+                </g>
+              </svg>
+            </figure>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

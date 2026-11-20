@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AlcaNox</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #101713;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.galeria {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  min-height: 190px;
+  border: 1px solid #dce3dc;
+}
+
+.imagen img {
+  display: block;
+  width: 100%;
+  max-width: 155px;
+  height: 145px;
+  object-fit: contain;
+}
+
+@media (max-width: 650px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .imagen {
+    min-height: 140px;
+    padding: 15px;
+  }
+
+  .imagen img {
+    max-width: 120px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 360px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="galeria">
+
+  <!-- MICROSOFT -->
+  <div class="imagen">
+    <img
+      src="/assets/microsoft-applied-skills-defender-xdr-yahir-romero.png"
+      alt="Microsoft">
+  </div>
+
+  <!-- QUALYS -->
+  <div class="imagen">
+    <img
+      src="/assets/certified-specialist-badge.png"
+      alt="Qualys">
+  </div>
+
+  <!-- ATTACKIQ -->
+  <div class="imagen">
+    <img
+      src="/assets/AttackIQ"
+      alt="AttackIQ">
+  </div>
+
+  <!-- CISCO -->
+  <div class="imagen">
+    <img
+      src="/assets/Cisco"
+      alt="Cisco">
+  </div>
+
+  <!-- FORTINET -->
+  <div class="imagen">
+    <img
+      src="/assets/fortinet"
+      alt="Fortinet">
+  </div>
+
+  <!-- PWN.COLLEGE -->
+  <div class="imagen">
+    <img
+      src="/assets/blue-belts-yahir-romero.png"
+      alt="pwn.college">
+  </div>
+
+</main>
+
+</body>
+</html>

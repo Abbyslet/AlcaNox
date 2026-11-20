@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- INICIO -->
+  <url>
+    <loc>https://alcanox.com/es/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/" />
+  </url>
+
+  <!-- LEENSFISH -->
+  <url>
+    <loc>https://alcanox.com/es/lensfish/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/lensfish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/lensfish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/lensfish/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/lensfish/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/lensfish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/lensfish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/lensfish/" />
+  </url>
+
+  <!-- CONTACTO -->
+  <url>
+    <loc>https://alcanox.com/es/contacto/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/contacto/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/contacto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/contacto/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/contacto/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/contacto/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/contacto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/contacto/" />
+  </url>
+
+  <!-- RESILIENCIA DDOS -->
+  <url>
+    <loc>https://alcanox.com/es/ddos/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/ddos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/ddos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/ddos/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/ddos/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/ddos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/ddos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/ddos/" />
+  </url>
+
+  <!-- DERECHO INFORMATICO -->
+  <url>
+    <loc>https://alcanox.com/es/derecho-informatico/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/derecho-informatico/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/derecho-informatico/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/derecho-informatico/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/derecho-informatico/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/derecho-informatico/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/derecho-informatico/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/derecho-informatico/" />
+  </url>
+
+  <!-- ANALISIS FORENSE -->
+  <url>
+    <loc>https://alcanox.com/es/forense/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/forense/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/forense/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/forense/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/forense/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/forense/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/forense/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/forense/" />
+  </url>
+
+  <!-- PRECIOS -->
+  <url>
+    <loc>https://alcanox.com/es/precios/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/precios/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/precios/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/precios/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/precios/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/precios/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/precios/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/precios/" />
+  </url>
+
+  <!-- GUIA PRIMER PENTESTING -->
+  <url>
+    <loc>https://alcanox.com/es/primer-pentesting/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/primer-pentesting/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/primer-pentesting/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/primer-pentesting/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/primer-pentesting/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/primer-pentesting/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/primer-pentesting/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/primer-pentesting/" />
+  </url>
+
+  <!-- POLITICA DE PRIVACIDAD -->
+  <url>
+    <loc>https://alcanox.com/es/privacidad/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/privacidad/" />
+  </url>
+  <url>
+    <loc>https://alcanox.com/en/privacidad/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alcanox.com/es/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alcanox.com/en/privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alcanox.com/es/privacidad/" />
+  </url>
+
+</urlset>
